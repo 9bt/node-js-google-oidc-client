@@ -1,0 +1,38 @@
+{
+  "name": "node-js-google-oidc-client",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "author": "9bt",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --config webpack.dev.js --watch",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build": "ENV_PATH=.env.production webpack --config webpack.prod.js",
+    "start": "make run"
+  },
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-passport": "^4.1.3",
+    "koa-router": "^9.1.0",
+    "koa-session": "^6.0.0",
+    "openid-client": "^3.15.6"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-passport": "^4.0.2",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-session": "^5.10.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "node-notifier": "^7.0.1",
+    "nodemon": "^2.0.4",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
